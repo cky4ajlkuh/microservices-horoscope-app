@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="server" />
+        <module name="server (2)" />
+        <module name="horoscope (2)" />
+        <module name="gateway" />
+        <module name="authentication" />
+        <module name="kafka" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="horoscope" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="authentication" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="horoscope" options="-parameters" />
+      <module name="horoscope (2)" options="-parameters" />
+      <module name="kafka" options="-parameters" />
+      <module name="server" options="-parameters" />
+      <module name="server (2)" options="-parameters" />
+    </option>
+  </component>
+</project>
